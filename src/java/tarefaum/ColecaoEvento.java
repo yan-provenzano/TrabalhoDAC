@@ -24,11 +24,14 @@ public class ColecaoEvento extends Colecao implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     
-    @Temporal (TemporalType.DATE)
+    @Temporal(TemporalType.DATE)
+    @DateTimeFormat(pattern = "yyyy-mm-dd")
     private Date dataInicio;
-    
-    @Temporal (TemporalType.DATE)
+
+    @Temporal(TemporalType.DATE)
+    @DateTimeFormat(pattern = "yyyy-mm-dd")
     private Date dataFim;
+
     
     public Long getId() {
         return id;

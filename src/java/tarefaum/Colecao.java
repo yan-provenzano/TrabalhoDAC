@@ -80,5 +80,12 @@ public class Colecao implements Serializable {
         this.recursos = recursos;
     }      
    
+   	public List<Recurso> getRecurso() {
+        return recursos;
+    }
+
+    public void setRecurso(List<Recurso> recursos) {
+        this.recursos = recursos;
+    }
 
 }

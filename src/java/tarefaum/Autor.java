@@ -85,6 +85,13 @@ public class Autor implements Serializable {
     public void setOrcId(String orcId) {
         this.orcId = orcId;
     }
-     
+    
+	public List<Recurso> getRecurso() {
+        return recursos;
+    }
+
+    public void setRecurso(List<Recurso> recursos) {
+        this.recursos = recursos;
+    }
 
 }

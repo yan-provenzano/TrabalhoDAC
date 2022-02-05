@@ -24,7 +24,8 @@ public class ColecaoCurso extends Colecao implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     
-    @Temporal (TemporalType.DATE)
+    @Temporal(TemporalType.DATE)
+    @DateTimeFormat(pattern = "yyyy-mm-dd")
     private Date dataRegistro;
     
     public Long getId() {
