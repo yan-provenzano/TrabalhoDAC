@@ -39,7 +39,7 @@ public class Recurso implements Serializable {
     private String link;
     
     @Lob
-    private String imagem;
+    private byte[] imagem;
     
     @Temporal (TemporalType.DATE)
     private Date dataCriacao;

@@ -37,6 +37,9 @@ public class Autor implements Serializable {
     @Pattern (regexp = "^(?=.{19}$)[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+){3}$", 
     message="OrcID  no formato XXXX-XXXX-XXXX-XXXX")
     private String orcId;
+
+	@ManyToMany
+	private List<Recurso> recursos;
     
     public Long getId() {
         return id;

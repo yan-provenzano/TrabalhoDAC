@@ -34,7 +34,7 @@ public class Colecao implements Serializable {
     private String descricao;
     
     @Lob
-    private String imagem;
+    private byte[] imagem;
     
     @OrderBy("titulo asc")
     @OneToMany
